@@ -1,0 +1,124 @@
+# Ignore the user-specific initial_cache file
+initial_cache.cmake
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Roslyn cache directories
+*.ide/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+#NUNIT
+*.VisualState.xml
+TestResult.xml
+
+# Build Results of an ATL Project
+[Dd]ebugPS/
+[Rr]eleasePS/
+dlldata.c
+
+*_i.c
+*_p.c
+*_i.h
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.cachefile
+*.vs
+*.VC.opendb
+*.VC.db
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+
+# Others
+sql/
+*.Cache
+ClientBin/
+[Ss]tyle[Cc]op.*
+~$*
+*~
+*.dbmdl
+*.dbproj.schemaview
+*.pfx
+*.publishsettings
+node_modules/
+
+#Our folder with models etc...
+share/
