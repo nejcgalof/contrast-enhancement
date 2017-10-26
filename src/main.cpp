@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <opencv2/opencv.hpp>
+#include <contrastEnhancement.hpp>
 
 using namespace cv;
 
@@ -20,8 +21,12 @@ int main(int argc, char** argv )
         printf("No image data \n");
         return -1;
     }
-    namedWindow("Display Image", WINDOW_AUTOSIZE );
-    imshow("Display Image", image);
+
+
+	cvtColor(image, image, CV_BGR2GRAY);
+	imshow("Original image", image);
+	equalizeHist(image, image);
+    imshow("Opencv Image", image);
 
     waitKey(0);
 
