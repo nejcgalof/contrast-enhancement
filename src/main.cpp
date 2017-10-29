@@ -8,9 +8,9 @@ using namespace cv;
 
 int main(int argc, char** argv )
 {
-    if ( argc != 2 )
+    if ( argc > 4 || argc < 2 )
     {
-        printf("usage: DisplayImage.out <Image_Path>\n");
+        printf("Usage: Contrast_enhancement.exe <Image_Path> <HE|AHE|CLHE|CLAHE> <window_size>\n");
         return -1;
     }
 
@@ -24,15 +24,27 @@ int main(int argc, char** argv )
     }
 
 	cvtColor(image, image, CV_BGR2GRAY);
-	imshow("Original image", image);
-	Mat image1 = image.clone();
-	Mat EH_image = equalize_histogram(image1, image.size().width, image.size().height, 255);
-	// Display equilized image
-	cv::namedWindow("Equilized Image");
-	cv::imshow("Equilized Image", EH_image);
-	Mat ah = AHE(image, 150);
-	cv::imshow("AHE", ah);
-    waitKey(0);
-
+	string name = std::string(argv[1]);
+	Mat image_result;
+	if (std::string(argv[2]) == "HE") {
+		image_result = equalize_histogram(image);
+		cv::imwrite(name.substr(0, name.length() - 4) + "_" + std::string(argv[2]) + ".jpg", image_result);
+	}
+	else if (std::string(argv[2]) == "AHE") {
+		image_result = AHE(image, atoi(argv[3]));
+		cv::imwrite(name.substr(0, name.length() - 4) + "_" + std::string(argv[2]) +"_"+string(argv[3]) + ".jpg", image_result);
+	}
+	else if (std::string(argv[2]) == "CLHE") {
+		image_result = equalize_histogram(image, true);
+		cv::imwrite(name.substr(0, name.length() - 4) + "_" + std::string(argv[2]) + ".jpg", image_result);
+	}
+	else if (std::string(argv[2]) == "CLAHE") {
+		image_result = AHE(image, atoi(argv[3]),true);
+		cv::imwrite(name.substr(0, name.length() - 4) + "_" + std::string(argv[2])  +"_" + string(argv[3]) + ".jpg", image_result);
+	}
+	else {
+		printf("Wrong algorithm! \n");
+		return -1;
+	}
     return 0;
 }

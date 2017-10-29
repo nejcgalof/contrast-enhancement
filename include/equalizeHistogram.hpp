@@ -1,4 +1,20 @@
-void image_histogram(cv::Mat image, int histogram[])
+void CL(int histogram[], int prag=2000) {
+	int sum = 0;
+	for (int i = 0; i < 256; i++)
+	{
+		if (histogram[i] > prag) {
+			sum += (histogram[i] - prag);
+			histogram[i] = prag;
+		}
+	}
+	int for_one = sum / 256;
+	for (int i = 0; i < 256; i++)
+	{
+		histogram[i] += for_one;
+	}
+}
+
+void image_histogram(cv::Mat image, int histogram[], bool if_CL=false)
 {
 	// All intensity values to 0
 	for (int i = 0; i < 256; i++)
@@ -11,6 +27,9 @@ void image_histogram(cv::Mat image, int histogram[])
 		for (int x = 0; x < image.cols; x++) {
 			histogram[(int)image.at<uchar>(y, x)]++;
 		}
+	}
+	if (if_CL) {
+		CL(histogram);
 	}
 }
 
@@ -38,13 +57,13 @@ void scale_histogram(int cum_hist[], double num_pixels, int scale_hist[])
 	}
 }
 
-cv::Mat equalize_histogram(cv::Mat image, int width, int height, int max_val = 255)
+cv::Mat equalize_histogram(cv::Mat image, bool CL=false)
 {
 	int hist[256];
 	int cum_hist[256];
 	int scale_hist[256];
 
-	image_histogram(image, hist);
+	image_histogram(image, hist, CL);
 	cumulative_histogram(hist, cum_hist);
 	scale_histogram(cum_hist, (image.rows * image.cols), scale_hist);
 
