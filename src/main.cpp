@@ -2,15 +2,15 @@
 #include <stdio.h>
 #include <opencv2/opencv.hpp>
 #include <equalizeHistogram.hpp>
-#include <CLAHE.hpp>
+#include <AHE.hpp>
 
 using namespace cv;
 
 int main(int argc, char** argv )
 {
-    if ( argc > 4 || argc < 2 )
+    if ( argc > 5 || argc < 2 )
     {
-        printf("Usage: Contrast_enhancement.exe <Image_Path> <HE|AHE|CLHE|CLAHE> <window_size>\n");
+        printf("Usage: Contrast_enhancement.exe <Image_Path> <HE|AHE|CLHE|CLAHE> <window_size> <treshold>\n");
         return -1;
     }
 
@@ -35,12 +35,12 @@ int main(int argc, char** argv )
 		cv::imwrite(name.substr(0, name.length() - 4) + "_" + std::string(argv[2]) +"_"+string(argv[3]) + ".jpg", image_result);
 	}
 	else if (std::string(argv[2]) == "CLHE") {
-		image_result = equalize_histogram(image, true);
-		cv::imwrite(name.substr(0, name.length() - 4) + "_" + std::string(argv[2]) + ".jpg", image_result);
+		image_result = equalize_histogram(image, true, atoi(argv[3]));
+		cv::imwrite(name.substr(0, name.length() - 4) + "_" + std::string(argv[2]) + "_"+string(argv[3])+ ".jpg", image_result);
 	}
 	else if (std::string(argv[2]) == "CLAHE") {
-		image_result = AHE(image, atoi(argv[3]),true);
-		cv::imwrite(name.substr(0, name.length() - 4) + "_" + std::string(argv[2])  +"_" + string(argv[3]) + ".jpg", image_result);
+		image_result = AHE(image, atoi(argv[3]),true, atoi(argv[4]));
+		cv::imwrite(name.substr(0, name.length() - 4) + "_" + std::string(argv[2])  +"_" + string(argv[3]) +"_" + string(argv[4])+ ".jpg", image_result);
 	}
 	else {
 		printf("Wrong algorithm! \n");
