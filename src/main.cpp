@@ -3,12 +3,13 @@
 #include <opencv2/opencv.hpp>
 #include <equalizeHistogram.hpp>
 #include <AHE.hpp>
+#include <ACE.hpp>
 
 using namespace cv;
 
 int main(int argc, char** argv )
 {
-    if ( argc > 5 || argc < 2 )
+    if ( argc > 5 || argc < 1 )
     {
         printf("Usage: Contrast_enhancement.exe <Image_Path> <HE|AHE|CLHE|CLAHE> <window_size> <treshold>\n");
         return -1;
@@ -41,6 +42,10 @@ int main(int argc, char** argv )
 	else if (std::string(argv[2]) == "CLAHE") {
 		image_result = AHE(image, atoi(argv[3]),true, atoi(argv[4]));
 		cv::imwrite(name.substr(0, name.length() - 4) + "_" + std::string(argv[2])  +"_" + string(argv[3]) +"_" + string(argv[4])+ ".jpg", image_result);
+	}
+	else if (std::string(argv[2]) == "ACE") {
+		image_result = ACE(image, strtod(argv[3], NULL));
+		cv::imwrite(name.substr(0, name.length() - 4) + "_" + std::string(argv[2]) +"_" + string(argv[3]) + ".jpg", image_result);
 	}
 	else {
 		printf("Wrong algorithm! \n");
