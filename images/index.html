@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img{
+   display:block; width:100%; height:auto;
+}
+
+td{
+  border:solid 1px;
+}
+
+table{
+	width: 100%; 
+	text-align: center;  
+}
+</style>
+</head>
+<body>
+	<H1>Contrast enhancement</H1>
+	<p>
+	Here is results of HE, CLHE, AHE and CLAHE. We set different windows size and threshold. You can see results on different images:
+	</p>
+	 <a href="#UNIVERSITY">UNIVERSITY</a> <a href="#CAR">CAR</a> <a href="#LAND">LAND</a> <a href="#GROUP">GROUP</a> <a href="#CROWD">CROWD</a> <a href="#COUPLE">COUPLE</a>
+	<H2 id="UNIVERSITY">UNIVERSITY</H2>
+	<table>
+		<tr>
+			<th>ORIGINAL</th>
+			<th>HE</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="university.png">
+			</td>
+			<td>
+				<img src="university_HE.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>CLHE threshold 500</th>
+			<th>CLHE threshold 1000</th>
+			<th>CLHE threshold 2000</th>
+			<th>CLHE threshold 4000</th>
+			<th>CLHE threshold 8000</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="university_CLHE_500.jpg">
+			</td>
+			<td>
+				<img src="university_CLHE_1000.jpg">
+			</td>
+			<td>
+				<img src="university_CLHE_2000.jpg">
+			</td>
+			<td>
+				<img src="university_CLHE_4000.jpg">
+			</td>
+			<td>
+				<img src="university_CLHE_8000.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>AHE window 15</th>
+			<th>AHE window 30</th>
+			<th>AHE window 60</th>
+			<th>AHE window 120</th>
+			<th>AHE window 180</th>
+			<th>AHE window 230</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="university_AHE_15.jpg">
+			</td>
+			<td>
+				<img src="university_AHE_30.jpg">
+			</td>
+			<td>
+				<img src="university_AHE_60.jpg">
+			</td>
+			<td>
+				<img src="university_AHE_120.jpg">
+			</td>
+			<td>
+				<img src="university_AHE_180.jpg">
+			</td>
+			<td>
+				<img src="university_AHE_230.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th></th>
+			<th>CLAHE threshold 500</th>
+			<th>CLAHE threshold 1000</th>
+			<th>CLAHE threshold 2000</th>
+			<th>CLAHE threshold 4000</th>
+			<th>CLAHE threshold 8000</th>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 15</p>
+			</td>
+			<td>
+				<img src="university_CLAHE_15_500.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_15_1000.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_15_2000.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_15_4000.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_15_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 30</p>
+			</td>
+			<td>
+				<img src="university_CLAHE_30_500.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_30_1000.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_30_2000.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_30_4000.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_30_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 60</p>
+			</td>
+			<td>
+				<img src="university_CLAHE_60_500.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_60_1000.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_60_2000.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_60_4000.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_60_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 120</p>
+			</td>
+			<td>
+				<img src="university_CLAHE_120_500.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_120_1000.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_120_2000.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_120_4000.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_120_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 180</p>
+			</td>
+			<td>
+				<img src="university_CLAHE_180_500.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_180_1000.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_180_2000.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_180_4000.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_180_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 230</p>
+			</td>
+			<td>
+				<img src="university_CLAHE_230_500.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_230_1000.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_230_2000.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_230_4000.jpg">
+			</td>
+			<td>
+				<img src="university_CLAHE_230_8000.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>ACE ALFA 1</th>
+			<th>ACE ALFA 2</th>
+			<th>ACE ALFA 3</th>
+			<th>ACE ALFA 4</th>
+			<th>ACE ALFA 5</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="university_ACE_1.jpg">
+			</td>
+			<td>
+				<img src="university_ACE_2.jpg">
+			</td>
+			<td>
+				<img src="university_ACE_3.jpg">
+			</td>
+			<td>
+				<img src="university_ACE_4.jpg">
+			</td>
+			<td>
+				<img src="university_ACE_5.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>ACE ALFA 6</th>
+			<th>ACE ALFA 7</th>
+			<th>ACE ALFA 8</th>
+			<th>ACE ALFA 9</th>
+			<th>ACE ALFA 10</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="university_ACE_6.jpg">
+			</td>
+			<td>
+				<img src="university_ACE_7.jpg">
+			</td>
+			<td>
+				<img src="university_ACE_8.jpg">
+			</td>
+			<td>
+				<img src="university_ACE_9.jpg">
+			</td>
+			<td>
+				<img src="university_ACE_10.jpg">
+			</td>
+		</tr>
+	</table>
+
+
+	<H2 id="CAR">CAR</H2>
+	<table>
+		<tr>
+			<th>ORIGINAL</th>
+			<th>HE</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="car.png">
+			</td>
+			<td>
+				<img src="car_HE.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>CLHE threshold 500</th>
+			<th>CLHE threshold 1000</th>
+			<th>CLHE threshold 2000</th>
+			<th>CLHE threshold 4000</th>
+			<th>CLHE threshold 8000</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="car_CLHE_500.jpg">
+			</td>
+			<td>
+				<img src="car_CLHE_1000.jpg">
+			</td>
+			<td>
+				<img src="car_CLHE_2000.jpg">
+			</td>
+			<td>
+				<img src="car_CLHE_4000.jpg">
+			</td>
+			<td>
+				<img src="car_CLHE_8000.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>AHE window 15</th>
+			<th>AHE window 30</th>
+			<th>AHE window 60</th>
+			<th>AHE window 120</th>
+			<th>AHE window 180</th>
+			<th>AHE window 230</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="car_AHE_15.jpg">
+			</td>
+			<td>
+				<img src="car_AHE_30.jpg">
+			</td>
+			<td>
+				<img src="car_AHE_60.jpg">
+			</td>
+			<td>
+				<img src="car_AHE_120.jpg">
+			</td>
+			<td>
+				<img src="car_AHE_180.jpg">
+			</td>
+			<td>
+				<img src="car_AHE_230.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th></th>
+			<th>CLAHE threshold 500</th>
+			<th>CLAHE threshold 1000</th>
+			<th>CLAHE threshold 2000</th>
+			<th>CLAHE threshold 4000</th>
+			<th>CLAHE threshold 8000</th>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 15</p>
+			</td>
+			<td>
+				<img src="car_CLAHE_15_500.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_15_1000.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_15_2000.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_15_4000.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_15_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 30</p>
+			</td>
+			<td>
+				<img src="car_CLAHE_30_500.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_30_1000.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_30_2000.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_30_4000.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_30_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 60</p>
+			</td>
+			<td>
+				<img src="car_CLAHE_60_500.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_60_1000.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_60_2000.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_60_4000.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_60_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 120</p>
+			</td>
+			<td>
+				<img src="car_CLAHE_120_500.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_120_1000.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_120_2000.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_120_4000.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_120_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 180</p>
+			</td>
+			<td>
+				<img src="car_CLAHE_180_500.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_180_1000.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_180_2000.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_180_4000.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_180_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 230</p>
+			</td>
+			<td>
+				<img src="car_CLAHE_230_500.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_230_1000.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_230_2000.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_230_4000.jpg">
+			</td>
+			<td>
+				<img src="car_CLAHE_230_8000.jpg">
+			</td>
+		</tr>
+	</table>
+		<table>
+		<tr>
+			<th>ACE ALFA 1</th>
+			<th>ACE ALFA 2</th>
+			<th>ACE ALFA 3</th>
+			<th>ACE ALFA 4</th>
+			<th>ACE ALFA 5</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="car_ACE_1.jpg">
+			</td>
+			<td>
+				<img src="car_ACE_2.jpg">
+			</td>
+			<td>
+				<img src="car_ACE_3.jpg">
+			</td>
+			<td>
+				<img src="car_ACE_4.jpg">
+			</td>
+			<td>
+				<img src="car_ACE_5.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>ACE ALFA 6</th>
+			<th>ACE ALFA 7</th>
+			<th>ACE ALFA 8</th>
+			<th>ACE ALFA 9</th>
+			<th>ACE ALFA 10</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="car_ACE_6.jpg">
+			</td>
+			<td>
+				<img src="car_ACE_7.jpg">
+			</td>
+			<td>
+				<img src="car_ACE_8.jpg">
+			</td>
+			<td>
+				<img src="car_ACE_9.jpg">
+			</td>
+			<td>
+				<img src="car_ACE_10.jpg">
+			</td>
+		</tr>
+	</table>
+
+
+	<H2 id="LAND">LAND</H2>
+	<table>
+		<tr>
+			<th>ORIGINAL</th>
+			<th>HE</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="img4.jpg">
+			</td>
+			<td>
+				<img src="img4_HE.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>CLHE threshold 500</th>
+			<th>CLHE threshold 1000</th>
+			<th>CLHE threshold 2000</th>
+			<th>CLHE threshold 4000</th>
+			<th>CLHE threshold 8000</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="img4_CLHE_500.jpg">
+			</td>
+			<td>
+				<img src="img4_CLHE_1000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLHE_2000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLHE_4000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLHE_8000.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>AHE window 15</th>
+			<th>AHE window 30</th>
+			<th>AHE window 60</th>
+			<th>AHE window 120</th>
+			<th>AHE window 180</th>
+			<th>AHE window 230</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="img4_AHE_15.jpg">
+			</td>
+			<td>
+				<img src="img4_AHE_30.jpg">
+			</td>
+			<td>
+				<img src="img4_AHE_60.jpg">
+			</td>
+			<td>
+				<img src="img4_AHE_120.jpg">
+			</td>
+			<td>
+				<img src="img4_AHE_180.jpg">
+			</td>
+			<td>
+				<img src="img4_AHE_230.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th></th>
+			<th>CLAHE threshold 500</th>
+			<th>CLAHE threshold 1000</th>
+			<th>CLAHE threshold 2000</th>
+			<th>CLAHE threshold 4000</th>
+			<th>CLAHE threshold 8000</th>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 15</p>
+			</td>
+			<td>
+				<img src="img4_CLAHE_15_500.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_15_1000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_15_2000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_15_4000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_15_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 30</p>
+			</td>
+			<td>
+				<img src="img4_CLAHE_30_500.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_30_1000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_30_2000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_30_4000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_30_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 60</p>
+			</td>
+			<td>
+				<img src="img4_CLAHE_60_500.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_60_1000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_60_2000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_60_4000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_60_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 120</p>
+			</td>
+			<td>
+				<img src="img4_CLAHE_120_500.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_120_1000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_120_2000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_120_4000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_120_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 180</p>
+			</td>
+			<td>
+				<img src="img4_CLAHE_180_500.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_180_1000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_180_2000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_180_4000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_180_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 230</p>
+			</td>
+			<td>
+				<img src="img4_CLAHE_230_500.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_230_1000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_230_2000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_230_4000.jpg">
+			</td>
+			<td>
+				<img src="img4_CLAHE_230_8000.jpg">
+			</td>
+		</tr>
+	</table>
+		<table>
+		<tr>
+			<th>ACE ALFA 1</th>
+			<th>ACE ALFA 2</th>
+			<th>ACE ALFA 3</th>
+			<th>ACE ALFA 4</th>
+			<th>ACE ALFA 5</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="img4_ACE_1.jpg">
+			</td>
+			<td>
+				<img src="img4_ACE_2.jpg">
+			</td>
+			<td>
+				<img src="img4_ACE_3.jpg">
+			</td>
+			<td>
+				<img src="img4_ACE_4.jpg">
+			</td>
+			<td>
+				<img src="img4_ACE_5.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>ACE ALFA 6</th>
+			<th>ACE ALFA 7</th>
+			<th>ACE ALFA 8</th>
+			<th>ACE ALFA 9</th>
+			<th>ACE ALFA 10</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="img4_ACE_6.jpg">
+			</td>
+			<td>
+				<img src="img4_ACE_7.jpg">
+			</td>
+			<td>
+				<img src="img4_ACE_8.jpg">
+			</td>
+			<td>
+				<img src="img4_ACE_9.jpg">
+			</td>
+			<td>
+				<img src="img4_ACE_10.jpg">
+			</td>
+		</tr>
+	</table>
+
+		<H2 id="GROUP">GROUP</H2>
+	<table>
+		<tr>
+			<th>ORIGINAL</th>
+			<th>HE</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="img3.jpg">
+			</td>
+			<td>
+				<img src="img3_HE.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>CLHE threshold 500</th>
+			<th>CLHE threshold 1000</th>
+			<th>CLHE threshold 2000</th>
+			<th>CLHE threshold 4000</th>
+			<th>CLHE threshold 8000</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="img3_CLHE_500.jpg">
+			</td>
+			<td>
+				<img src="img3_CLHE_1000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLHE_2000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLHE_4000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLHE_8000.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>AHE window 15</th>
+			<th>AHE window 30</th>
+			<th>AHE window 60</th>
+			<th>AHE window 120</th>
+			<th>AHE window 180</th>
+			<th>AHE window 230</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="img3_AHE_15.jpg">
+			</td>
+			<td>
+				<img src="img3_AHE_30.jpg">
+			</td>
+			<td>
+				<img src="img3_AHE_60.jpg">
+			</td>
+			<td>
+				<img src="img3_AHE_120.jpg">
+			</td>
+			<td>
+				<img src="img3_AHE_180.jpg">
+			</td>
+			<td>
+				<img src="img3_AHE_230.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th></th>
+			<th>CLAHE threshold 500</th>
+			<th>CLAHE threshold 1000</th>
+			<th>CLAHE threshold 2000</th>
+			<th>CLAHE threshold 4000</th>
+			<th>CLAHE threshold 8000</th>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 15</p>
+			</td>
+			<td>
+				<img src="img3_CLAHE_15_500.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_15_1000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_15_2000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_15_4000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_15_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 30</p>
+			</td>
+			<td>
+				<img src="img3_CLAHE_30_500.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_30_1000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_30_2000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_30_4000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_30_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 60</p>
+			</td>
+			<td>
+				<img src="img3_CLAHE_60_500.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_60_1000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_60_2000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_60_4000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_60_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 120</p>
+			</td>
+			<td>
+				<img src="img3_CLAHE_120_500.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_120_1000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_120_2000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_120_4000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_120_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 180</p>
+			</td>
+			<td>
+				<img src="img3_CLAHE_180_500.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_180_1000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_180_2000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_180_4000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_180_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 230</p>
+			</td>
+			<td>
+				<img src="img3_CLAHE_230_500.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_230_1000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_230_2000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_230_4000.jpg">
+			</td>
+			<td>
+				<img src="img3_CLAHE_230_8000.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>ACE ALFA 1</th>
+			<th>ACE ALFA 2</th>
+			<th>ACE ALFA 3</th>
+			<th>ACE ALFA 4</th>
+			<th>ACE ALFA 5</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="img3_ACE_1.jpg">
+			</td>
+			<td>
+				<img src="img3_ACE_2.jpg">
+			</td>
+			<td>
+				<img src="img3_ACE_3.jpg">
+			</td>
+			<td>
+				<img src="img3_ACE_4.jpg">
+			</td>
+			<td>
+				<img src="img3_ACE_5.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>ACE ALFA 6</th>
+			<th>ACE ALFA 7</th>
+			<th>ACE ALFA 8</th>
+			<th>ACE ALFA 9</th>
+			<th>ACE ALFA 10</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="img3_ACE_6.jpg">
+			</td>
+			<td>
+				<img src="img3_ACE_7.jpg">
+			</td>
+			<td>
+				<img src="img3_ACE_8.jpg">
+			</td>
+			<td>
+				<img src="img3_ACE_9.jpg">
+			</td>
+			<td>
+				<img src="img3_ACE_10.jpg">
+			</td>
+		</tr>
+	</table>
+
+	<H2 id="CROWD">CROWD</H2>
+	<table>
+		<tr>
+			<th>ORIGINAL</th>
+			<th>HE</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="crowd.png">
+			</td>
+			<td>
+				<img src="crowd_HE.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>CLHE threshold 500</th>
+			<th>CLHE threshold 1000</th>
+			<th>CLHE threshold 2000</th>
+			<th>CLHE threshold 4000</th>
+			<th>CLHE threshold 8000</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="crowd_CLHE_500.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLHE_1000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLHE_2000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLHE_4000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLHE_8000.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>AHE window 15</th>
+			<th>AHE window 30</th>
+			<th>AHE window 60</th>
+			<th>AHE window 120</th>
+			<th>AHE window 180</th>
+			<th>AHE window 230</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="crowd_AHE_15.jpg">
+			</td>
+			<td>
+				<img src="crowd_AHE_30.jpg">
+			</td>
+			<td>
+				<img src="crowd_AHE_60.jpg">
+			</td>
+			<td>
+				<img src="crowd_AHE_120.jpg">
+			</td>
+			<td>
+				<img src="crowd_AHE_180.jpg">
+			</td>
+			<td>
+				<img src="crowd_AHE_230.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th></th>
+			<th>CLAHE threshold 500</th>
+			<th>CLAHE threshold 1000</th>
+			<th>CLAHE threshold 2000</th>
+			<th>CLAHE threshold 4000</th>
+			<th>CLAHE threshold 8000</th>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 15</p>
+			</td>
+			<td>
+				<img src="crowd_CLAHE_15_500.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_15_1000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_15_2000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_15_4000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_15_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 30</p>
+			</td>
+			<td>
+				<img src="crowd_CLAHE_30_500.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_30_1000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_30_2000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_30_4000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_30_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 60</p>
+			</td>
+			<td>
+				<img src="crowd_CLAHE_60_500.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_60_1000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_60_2000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_60_4000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_60_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 120</p>
+			</td>
+			<td>
+				<img src="crowd_CLAHE_120_500.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_120_1000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_120_2000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_120_4000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_120_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 180</p>
+			</td>
+			<td>
+				<img src="crowd_CLAHE_180_500.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_180_1000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_180_2000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_180_4000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_180_8000.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Window 230</p>
+			</td>
+			<td>
+				<img src="crowd_CLAHE_230_500.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_230_1000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_230_2000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_230_4000.jpg">
+			</td>
+			<td>
+				<img src="crowd_CLAHE_230_8000.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>ACE ALFA 1</th>
+			<th>ACE ALFA 2</th>
+			<th>ACE ALFA 3</th>
+			<th>ACE ALFA 4</th>
+			<th>ACE ALFA 5</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="crowd_ACE_1.jpg">
+			</td>
+			<td>
+				<img src="crowd_ACE_2.jpg">
+			</td>
+			<td>
+				<img src="crowd_ACE_3.jpg">
+			</td>
+			<td>
+				<img src="crowd_ACE_4.jpg">
+			</td>
+			<td>
+				<img src="crowd_ACE_5.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>ACE ALFA 6</th>
+			<th>ACE ALFA 7</th>
+			<th>ACE ALFA 8</th>
+			<th>ACE ALFA 9</th>
+			<th>ACE ALFA 10</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="crowd_ACE_6.jpg">
+			</td>
+			<td>
+				<img src="crowd_ACE_7.jpg">
+			</td>
+			<td>
+				<img src="crowd_ACE_8.jpg">
+			</td>
+			<td>
+				<img src="crowd_ACE_9.jpg">
+			</td>
+			<td>
+				<img src="crowd_ACE_10.jpg">
+			</td>
+		</tr>
+	</table>
+	<H2 id="COUPLE">COUPLE</H2>
+		<table>
+		<tr>
+			<th>ACE ALFA 1</th>
+			<th>ACE ALFA 2</th>
+			<th>ACE ALFA 3</th>
+			<th>ACE ALFA 4</th>
+			<th>ACE ALFA 5</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="img1_ACE_1.jpg">
+			</td>
+			<td>
+				<img src="img1_ACE_2.jpg">
+			</td>
+			<td>
+				<img src="img1_ACE_3.jpg">
+			</td>
+			<td>
+				<img src="img1_ACE_4.jpg">
+			</td>
+			<td>
+				<img src="img1_ACE_5.jpg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th>ACE ALFA 6</th>
+			<th>ACE ALFA 7</th>
+			<th>ACE ALFA 8</th>
+			<th>ACE ALFA 9</th>
+			<th>ACE ALFA 10</th>
+		</tr>
+		<tr>
+			<td>
+				<img src="img1_ACE_6.jpg">
+			</td>
+			<td>
+				<img src="img1_ACE_7.jpg">
+			</td>
+			<td>
+				<img src="img1_ACE_8.jpg">
+			</td>
+			<td>
+				<img src="img1_ACE_9.jpg">
+			</td>
+			<td>
+				<img src="img1_ACE_10.jpg">
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
